@@ -4,12 +4,12 @@ home:
     favoriteTools: 'Your favorite tools'
     allTools: 'All the tools'
     favoritesDndToolTip: 'Drag and drop to reorder favorites'
-  subtitle: 'Handy tools for developers'
+  subtitle: 'Handy tools for campus life'
   toggleMenu: 'Toggle menu'
   home: Home
   uiLib: 'UI Lib'
-  support: 'Support IT-Tools development'
-  buyMeACoffee: 'Buy me a coffee'
+  support: 'Source code & feedback'
+  buyMeACoffee: 'View source'
   follow:
     title: 'You like it-tools?'
     p1: 'Give us a star on'
@@ -28,23 +28,28 @@ home:
     lightMode: 'Light mode'
     mode: 'Toggle dark/light mode'
 about:
-  content: >
-    # About IT-Tools
+  content: |
+    # About Campus Toolbox
 
-    This wonderful website, made with ❤ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
+    Campus Toolbox is a derivative work based on the open-source project [IT-Tools](https://github.com/CorentinTh/it-tools), rebuilt for Chinese campus scenarios. We keep the great tool framework, component system and i18n support of IT-Tools, and focus on what students actually use every day.
 
-    IT Tools is open-source (under the GPL-3.0 license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
+    ## New campus tools
 
-    ## Technologies
+    - **GPA / Weighted Average Calculator** — switch between weighted-percentage, standard 4.0, 4.0 (5-point bands), 4.5 and 5.0 linear scales, paste-import a whole transcript, and back-solve the average you need for a target GPA.
+    - **Timetable Conflict & Free Slot Planner** — detects overlapping classes by weekday, period and week range (odd/even weeks supported), then maps every free slot and study window of your week.
+    - **Chinese Official Document Format Checker** — checks titles, addressee lines, numbering hierarchy, punctuation, numerals and required elements against GB/T 9704-2012 and gives per-issue fixes.
 
-    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
+    ## License and attribution
 
-    ## Found a bug? A tool is missing?
+    This project is a derivative of IT-Tools and is released under the **GNU GPL-3.0** license, the same license as the original work by [Corentin Thomasset](https://corentin.tech). GPL-3.0 is copyleft: any modified version you distribute or deploy publicly must also be released under GPL-3.0, with the original copyright notices preserved.
 
-    If you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    ## Privacy
 
-    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    Everything runs locally in your browser. Grades, timetables and document content never leave your device, and the app works offline as a PWA.
 
+    ## Found a bug? Need another tool?
+
+    Open an issue or a pull request on the [project repository](https://github.com/wyh66649/it-tools). Feature requests for the upstream toolset belong in the [IT-Tools issues](https://github.com/CorentinTh/it-tools/issues/new/choose).
 404:
   notFound: '404 Not Found'
   sorry: 'Sorry, this page does not seem to exist'
@@ -59,6 +64,7 @@ search:
   label: Search
 tools:
   categories:
+    campus: Campus
     favorite-tools: 'Your favorite tools'
     crypto: Crypto
     converter: Converter
@@ -392,3 +398,14 @@ tools:
   text-to-binary:
     title: Text to ASCII binary
     description: Convert text to its ASCII binary representation and vice-versa.
+  gpa-calculator:
+    title: GPA / Weighted Average Calculator
+    description: Convert course scores into grade points with switchable algorithms (weighted percentage, 4.0, 4.5, 5.0), paste-import a whole transcript, and back-solve the score you need to hit a target GPA.
+
+  timetable-planner:
+    title: Timetable Conflict & Free Slot Planner
+    description: Detect overlapping classes by weekday, period and week range (odd/even weeks supported), then map every free slot and gap in your week.
+
+  official-document-checker:
+    title: Chinese Official Document Format Checker
+    description: Paste a Chinese official document and get instant checks on the title, addressee, numbering hierarchy, punctuation, numerals and required elements.

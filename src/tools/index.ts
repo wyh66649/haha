@@ -88,7 +88,16 @@ import { tool as macAddressLookup } from './mac-address-lookup';
 import { tool as xmlFormatter } from './xml-formatter';
 import { tool as yamlViewer } from './yaml-viewer';
 
+// —— 校园工具箱新增 ——
+import { tool as gpaCalculator } from './gpa-calculator';
+import { tool as timetablePlanner } from './timetable-planner';
+import { tool as officialDocumentChecker } from './official-document-checker';
+
 export const toolsByCategory: ToolCategory[] = [
+  {
+    name: 'Campus',
+    components: [gpaCalculator, timetablePlanner, officialDocumentChecker],
+  },
   {
     name: 'Crypto',
     components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],

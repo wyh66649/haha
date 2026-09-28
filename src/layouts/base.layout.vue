@@ -2,7 +2,7 @@
 import { NIcon, useThemeVars } from 'naive-ui';
 
 import { RouterLink } from 'vue-router';
-import { Heart, Home2, Menu2 } from '@vicons/tabler';
+import { Code, Home2, Menu2 } from '@vicons/tabler';
 
 import { storeToRefs } from 'pinia';
 import HeroGradient from '../assets/hero-gradient.svg?component';
@@ -39,7 +39,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            校园工具箱
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -61,7 +61,11 @@ const tools = computed<ToolCategory[]>(() => [
 
         <div class="footer">
           <div>
-            IT-Tools
+            校园工具箱 · 基于
+            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh/it-tools">
+              IT-Tools
+            </c-link>
+            （GPL-3.0）二次开发
 
             <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
               v{{ version }}
@@ -123,15 +127,15 @@ const tools = computed<ToolCategory[]>(() => [
         <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
-            href="https://www.buymeacoffee.com/cthmsst"
+            href="https://github.com/wyh66649/it-tools"
             rel="noopener"
             target="_blank"
             class="support-button"
             :bordered="false"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
+            @click="() => tracker.trackEvent({ eventName: 'Source button clicked' })"
           >
             {{ $t('home.buyMeACoffee') }}
-            <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
+            <NIcon v-if="!styleStore.isSmallScreen" :component="Code" ml-2 />
           </c-button>
         </c-tooltip>
       </div>

@@ -4,12 +4,12 @@ home:
     favoriteTools: '我的收藏'
     allTools: '全部工具'
     favoritesDndToolTip: '拖放重新排列收藏夹'
-  subtitle: '助力开发人员和 IT 工作者'
+  subtitle: '学生每天都会用到的校园工具集'
   toggleMenu: '切换菜单'
   home: '主页'
   uiLib: 'UI 库'
-  support: '支持 IT 工具开发'
-  buyMeACoffee: '赞助'
+  support: '开源仓库与问题反馈'
+  buyMeACoffee: '查看源码'
   follow:
     title: '关注我们'
     p1: '给我们 Star'
@@ -28,23 +28,28 @@ home:
     lightMode: '浅色模式'
     mode: '颜色模式'
 about:
-  content: >
-    # 关于 IT-Tools
+  content: |
+    # 关于校园工具箱
 
-    IT-Tools 由 [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) 用 ❤ 开发，汇集了对开发人员和 IT 从业者有用的工具。如果对您有帮助，请将其分享给您的朋友，并且添加到收藏夹中！
+    校园工具箱（Campus Toolbox）是基于开源项目 [IT-Tools](https://github.com/CorentinTh/it-tools) 二次开发的校园场景工具集合。我们完整保留了 IT-Tools 的工具框架、组件体系与多语言能力，把重心放在学生每天真正会用到的场景上。
 
-    IT-Tools 永久免费且开源（GPL-3.0 许可证），但需要资金用于托管和续订域名。如果您想支持我的工作，并鼓励我添加更多工具，请考虑通过 [赞助我](https://www.buymeacoffee.com/cthmsst) 进行支持。
+    ## 新增的校园工具
 
-    ## 技术
+    - **加权平均分 / GPA 换算器** —— 加权百分制、标准 4.0、4.0（五分一段）、4.5、5.0 线性等多套算法一键切换，可粘贴导入整份成绩单，并能反推达到目标 GPA 需要考多少分。
+    - **课表冲突检测与空闲时段分析** —— 按星期、节次与周次（含单周/双周）检测课程冲突，自动算出每天的空闲时段与可利用空档，并统计每周课时负荷。
+    - **公文格式自检** —— 依据《党政机关公文格式》(GB/T 9704-2012) 检查标题、主送机关、层次序号、标点、数字用法与署名日期等要素，逐条给出修改建议。
 
-    IT-Tools 采用 Vue.js（Vue 3）和 Naive UI 组件库开发，并由 Vercel 托管和持续部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) 文件中找到完整的列表。
+    ## 开源许可与来源声明
 
-    ## 发现了 Bug？缺少工具？
+    本项目是 IT-Tools 的衍生作品，遵循 **GNU GPL-3.0** 许可证发布 —— 与原项目 [Corentin Thomasset](https://corentin.tech) 的授权保持一致。GPL-3.0 具有传染性（copyleft）：任何基于本项目的修改与再分发，都必须继续以 GPL-3.0 开源，并保留原始版权声明。
 
-    如果目前这里没有您需要的工具，并且您认为它可能有用，欢迎在 GitHub 仓库的 [issues](https://github.com/CorentinTh/it-tools/issues/new/choose) 中提交新增功能的请求。
+    ## 隐私
 
-    如果您发现了 Bug，或者某些功能未能按预期工作，请在 GitHub 仓库的 [issues](https://github.com/CorentinTh/it-tools/issues/new/choose) 中提交错误报告。
+    所有计算都在浏览器本地完成，成绩、课表、公文内容不会上传到任何服务器；本项目支持离线使用（PWA）。
 
+    ## 发现了 Bug？需要新工具？
+
+    欢迎在 [项目仓库](https://github.com/wyh66649/it-tools) 提交 issue 或 PR；上游 IT-Tools 的功能请求请提交到 [IT-Tools issues](https://github.com/CorentinTh/it-tools/issues/new/choose)。
 404:
   notFound: '404 页面不存在'
   sorry: '抱歉，该页面似乎不存在'
@@ -59,6 +64,7 @@ search:
   label: '搜索'
 tools:
   categories:
+    campus: '校园'
     favorite-tools: '我的收藏'
     crypto: '加密'
     converter: '转换器'
@@ -388,3 +394,14 @@ tools:
   text-to-binary:
     title: 文本到 ASCII 二进制
     description: 将文本转换为其 ASCII 二进制表示形式，反之亦然。
+  gpa-calculator:
+    title: 加权平均分 / GPA 换算器
+    description: 加权百分制、标准 4.0、4.0（五分一段）、4.5、5.0 线性等多套算法一键切换，支持粘贴导入整份成绩单，还能反推达到目标 GPA 需要考多少分。
+
+  timetable-planner:
+    title: 课表冲突检测与空闲时段分析
+    description: 按星期、节次和周次（支持单周/双周）自动检测课程冲突，算出每天的空闲时段与可利用空档，并统计每周课时负荷。
+
+  official-document-checker:
+    title: 公文格式自检
+    description: 粘贴公文正文，自动检查标题、主送机关、层次序号、标点、数字用法与署名日期等要素，依据《党政机关公文格式》给出逐条修改建议。
